@@ -62,17 +62,21 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
 # def <fn_name>(self): This (self) represents this is a class function name.
 
-def get_full_name(self):
-    """ Used to get a users full name"""
-    return self.name # self gets the base object and name is the field in the class UserProfileManager
+    def get_full_name(self):
+
+        """ Used to get a users full name"""
+        return self.name # self gets the base object and name is the field in the class UserProfileManager
 
 
-def get_short_name(self):
-    """Used to get the users short name"""
+    def get_short_name(self):
 
-    return self.name
+        """Used to get the users short name"""
+
+        return self.name
 
 # The below __str__ function Knows how to return the object as a string;
 
-def __str__(self):
-    """Django uses __str__ function to convert the object to a string"""
+    def __str__(self):
+        """Django uses __str__ function to convert the object to a string"""
+
+        return self.email

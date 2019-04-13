@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'restapi_profile_app'
+    'restapi_profile_app',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +123,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Below is the custom entry added
-# This is needed to tell the project to use a custom model defined for the app 
+# This is needed to tell the project to use a custom model defined for the app
 
 AUTH_USER_MODEL = 'restapi_profile_app.UserProfile'
