@@ -121,3 +121,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# In Django, we use the models to describe the data we need for our applications;
+
+Then these models are used to automatically setup and configure our DB to store data;
+Each model we describe match to a specific table in our DB;
+No need for sql statements
+
+# Create use DB model - DB profile model; Located in the app - models.py for the app;
+
+# 

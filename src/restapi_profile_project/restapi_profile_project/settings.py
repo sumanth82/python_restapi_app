@@ -121,3 +121,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Below is the custom entry added
+# This is needed to tell the project to use a custom model defined for the app 
+
+AUTH_USER_MODEL = 'restapi_profile_app.UserProfile'

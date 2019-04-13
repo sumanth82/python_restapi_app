@@ -90,3 +90,29 @@ Quit the server with CTRL-BREAK.
 ***
 
 Access using web browser : http://127.0.0.1:8080/   :-)
+
+# DATABASE:
+
+- After you create a custom model for a DB, you specify the project to use this custom model in the settings.py file
+- Ex: AUTH_USER_MODEL = 'restapi_profile_app.UserProfile'
+
+- You use the python manage.py makemigrations command to check our models, check the DB, and sync the DB;
+- This will create and setup our DB for the first time.
+
+- Under the app, you'll see a migrations folder with a new initial DB setup like - 0001_initial.py
+**
+
+(env) C:\pythonProjects\workspace\python-rest-api\src\restapi_profile_project>py manage.py makemigrations
+Migrations for 'restapi_profile_app':
+  restapi_profile_app\migrations\0001_initial.py
+    - Create model UserProfile
+
+**
+
+- Then use the python manage.py migrate command; Will go through all our DB migrations and run on our DB;
+- This will create the sqldblite file under the app. 
+# VAGRANT
+
+- vagrant up
+- vagrant ssh
+- workon <project_name>
