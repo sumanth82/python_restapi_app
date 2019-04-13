@@ -110,7 +110,25 @@ Migrations for 'restapi_profile_app':
 **
 
 - Then use the python manage.py migrate command; Will go through all our DB migrations and run on our DB;
-- This will create the sqldblite file under the app. 
+- This will create the sqldblite file under the app.
+
+# DjangoAdmin:
+
+- Feature that gives us a whole administrative website that we can use to manage the models that we create in our DB;
+
+- py manage.py createsuperuser
+  Asks for username, password n so on..
+
+  - You resgiter the models using DjangoAdmin
+
+  - Go to admin.py file to register the models - admin.site.register(models.UserProfile)
+
+- Test the DjangoAdmin by starting - python manage.py runserver 0.0.0.0:8080
+
+- Then go to http://127.0.0.1:8080/admin/ 
+
+
+
 # VAGRANT
 
 - vagrant up
