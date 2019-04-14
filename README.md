@@ -125,7 +125,7 @@ Migrations for 'restapi_profile_app':
 
 - Test the DjangoAdmin by starting - python manage.py runserver 0.0.0.0:8080
 
-- Then go to http://127.0.0.1:8080/admin/ 
+- Then go to http://127.0.0.1:8080/admin/
 
 
 
@@ -134,3 +134,20 @@ Migrations for 'restapi_profile_app':
 - vagrant up
 - vagrant ssh
 - workon <project_name>
+
+# APIView and Viewset helper classes:
+
+- These are the frameworks Django provides to create an API endpoint
+
+- APIView - Allows us to define standard HTTP Methods for functions: GET, POST, PUT;
+- When to use? - When you need full control over your application logic;
+
+# Create the first API View:
+
+- Use the views.py under the app/, import the APIView class and define the request and response functions
+
+# Map the URL's:
+
+- Under the project/, you have the urls.py
+
+-
